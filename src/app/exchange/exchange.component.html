@@ -1,0 +1,12 @@
+<label>Monto</label>
+<input type="text" [(ngModel)]="amount">
+<label>Moneda Origen</label>
+<input type="text" [(ngModel)]="originCurrency">
+<label>Moneda Destino</label>
+<input type="text" [(ngModel)]="destinationCurrency">
+<button (click)="exchange()">Convertir</button>
+<br><br>
+<label>Nuevo Monto</label>
+<input type="text" [(ngModel)]="exchangeAmount" disabled>
+<label>Tipo de Cambio</label>
+<input type="text" [(ngModel)]="exchangeRate" disabled>
